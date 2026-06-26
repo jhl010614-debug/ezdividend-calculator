@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Smart Dividend & DRIP Calculator</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); padding: 40px 20px; display: flex; justify-content: center; }
+        .container { max-width: 800px; width: 100%; }
+        nav { display: flex; gap: 24px; margin-bottom: 40px; flex-wrap: wrap; }
+        nav a { color: var(--text-muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: var(--primary); }
+        h1 { font-size: 28px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+        .subtitle { color: var(--text-muted); font-size: 16px; margin-bottom: 35px; }
+        .card { background: var(--card-bg); border-radius: 16px; padding: 35px; border: 1px solid var(--border); margin-bottom: 20px; }
+        h2 { font-size: 17px; color: #fff; margin-bottom: 12px; }
+        p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 12px; }
+        p:last-child { margin-bottom: 0; }
+        .email-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 16px; background: #0f172a; border: 1px solid var(--border); padding: 14px 20px; border-radius: 10px; color: var(--primary); text-decoration: none; font-size: 15px; font-weight: 600; transition: border-color 0.2s; }
+        .email-link:hover { border-color: var(--primary); }
+        .response-note { font-size: 13px; color: var(--text-muted); margin-top: 12px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="index.html">Calculator</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
+
+    <h1>Contact</h1>
+    <p class="subtitle">Questions, feedback, or partnership inquiries — we'd love to hear from you.</p>
+
+    <div class="card">
+        <h2>Get in Touch</h2>
+        <p>Have a suggestion for a new preset or feature? Found a bug in the calculator? Feel free to reach out directly by email.</p>
+        <a href="mailto:jhl010614@gmail.com" class="email-link">
+            ✉ jhl010614@gmail.com
+        </a>
+        <p class="response-note">We typically respond within 1–3 business days.</p>
+    </div>
+
+    <div class="card">
+        <h2>Advertising & Partnerships</h2>
+        <p>For advertising inquiries or partnership opportunities related to this site, please use the email above with the subject line "Partnership Inquiry".</p>
+    </div>
+
+    <div class="card">
+        <h2>Disclaimer Reminder</h2>
+        <p>This site does not provide personalized financial advice. For investment guidance specific to your situation, please consult a licensed financial advisor.</p>
+    </div>
+</div>
+</body>
+</html>

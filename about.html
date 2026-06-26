@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – Smart Dividend & DRIP Calculator</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); padding: 40px 20px; display: flex; justify-content: center; }
+        .container { max-width: 800px; width: 100%; }
+        nav { display: flex; gap: 24px; margin-bottom: 40px; flex-wrap: wrap; }
+        nav a { color: var(--text-muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: var(--primary); }
+        h1 { font-size: 28px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+        .subtitle { color: var(--text-muted); font-size: 16px; margin-bottom: 35px; }
+        .card { background: var(--card-bg); border-radius: 16px; padding: 35px; border: 1px solid var(--border); margin-bottom: 20px; }
+        h2 { font-size: 17px; color: #fff; margin-bottom: 12px; }
+        p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 12px; }
+        p:last-child { margin-bottom: 0; }
+        .feature-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .feature-list li { font-size: 14px; color: var(--text-muted); padding-left: 20px; position: relative; line-height: 1.6; }
+        .feature-list li::before { content: "→"; color: var(--primary); position: absolute; left: 0; }
+        .cta { display: inline-block; margin-top: 20px; background: var(--primary); color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; transition: background 0.2s; }
+        .cta:hover { background: #059669; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="index.html">Calculator</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
+
+    <h1>About This Calculator</h1>
+    <p class="subtitle">A free tool for projecting long-term wealth through dividends, DRIP, and leveraged investing.</p>
+
+    <div class="card">
+        <h2>What Is This Tool?</h2>
+        <p>The Smart Dividend, DRIP & Leverage Wealth Calculator is a free, browser-based financial projection tool. It helps investors model how their portfolio might grow over time by combining capital appreciation, dividend income, and the power of compounding through automatic reinvestment (DRIP).</p>
+        <p>All calculations run entirely in your browser — no data is ever sent to a server, and no account is required.</p>
+    </div>
+
+    <div class="card">
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+            <li>Model any combination of annual return rate and dividend yield</li>
+            <li>Toggle DRIP (Dividend Reinvestment Plan) on or off to compare outcomes</li>
+            <li>One-click presets for popular funds: VOO, QQQ, SCHD, JEPI, JEPQ, and leveraged ETFs (SSO, UPRO, QLD, TQQQ)</li>
+            <li>Add monthly contributions to simulate dollar-cost averaging</li>
+            <li>Instant results: total balance, total invested, annual and monthly dividend income</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Disclaimer</h2>
+        <p>This tool is for educational and illustrative purposes only. It does not constitute financial advice. Past performance of any fund or index does not guarantee future results. Leveraged ETFs carry significant risk and may not be suitable for all investors.</p>
+        <p>Always consult a qualified financial advisor before making investment decisions.</p>
+    </div>
+
+    <a href="index.html" class="cta">Open the Calculator →</a>
+</div>
+</body>
+</html>
